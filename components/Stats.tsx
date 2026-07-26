@@ -1,42 +1,68 @@
+"use client";
+
+import { motion } from "framer-motion";
+import {
+  FaProjectDiagram,
+  FaCertificate,
+  FaShieldAlt,
+  FaLaptopCode,
+} from "react-icons/fa";
+
 export default function Stats() {
   const stats = [
     {
+      icon: <FaProjectDiagram />,
       number: "7+",
       title: "Projects",
     },
     {
-      number: "8+",
+      icon: <FaCertificate />,
+      number: "10+",
       title: "Certifications",
     },
     {
-      number: "L2",
-      title: "Technical Support",
+      icon: <FaShieldAlt />,
+      number: "SOC",
+      title: "Experience",
     },
     {
+      icon: <FaLaptopCode />,
       number: "TryHackMe",
-      title: "Hands-on Labs",
+      title: "Labs",
     },
   ];
 
   return (
-    <section className="py-16 px-8">
+    <section className="py-16 px-6 md:px-8">
       <div className="max-w-7xl mx-auto">
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
 
           {stats.map((item, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-[#0f172a] border border-blue-500/20 rounded-2xl p-8 text-center hover:border-blue-500 hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition duration-300"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.15 }}
+              viewport={{ once: true }}
+              whileHover={{
+                y: -8,
+                scale: 1.03,
+              }}
+              className="bg-[#0f172a] border border-blue-500/20 rounded-2xl p-6 min-h-[180px] flex flex-col justify-center items-center text-center hover:border-blue-500 hover:shadow-[0_0_25px_rgba(59,130,246,0.35)] transition-all duration-300"
             >
-              <h2 className="text-4xl font-bold text-blue-400">
+              <div className="text-4xl text-blue-400 mb-4">
+                {item.icon}
+              </div>
+
+              <h2 className="text-2xl md:text-3xl font-bold text-blue-400 break-words">
                 {item.number}
               </h2>
 
-              <p className="text-gray-300 mt-3">
+              <p className="text-gray-300 mt-3 text-sm md:text-base font-medium">
                 {item.title}
               </p>
-            </div>
+            </motion.div>
           ))}
 
         </div>

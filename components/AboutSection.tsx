@@ -52,7 +52,7 @@ export default function AboutSection() {
 
                 <p><strong>Location:</strong> Uttarakhand, India</p>
 
-                <p><strong>Experience:</strong> Technical Support Executive (L2)</p>
+                <p><strong>Experience:</strong> SOC Technical Support Executive (L2)</p>
 
                 <p><strong>Current Goal:</strong> SOC Analyst / Cybersecurity Analyst</p>
 

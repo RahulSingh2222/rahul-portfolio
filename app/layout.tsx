@@ -12,10 +12,66 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Rahul Singh | Cybersecurity Portfolio",
+export const metadata: Metadata = {
+  metadataBase: new URL("https://rahul-cyber.vercel.app"),
+
+  title: {
+    default: "Rahul Singh | Cybersecurity Analyst",
+    template: "%s | Rahul Singh",
+  },
+
   description:
-    "Cybersecurity Portfolio showcasing SOC projects, certifications, skills and experience.",
+    "Cybersecurity Analyst portfolio showcasing SOC operations, Splunk, Wazuh, Microsoft Sentinel, Python, Networking, Incident Response, Security Projects and Certifications.",
+
+  keywords: [
+    "Rahul Singh",
+    "Cybersecurity",
+    "Cybersecurity Analyst",
+    "SOC Analyst",
+    "Splunk",
+    "Wazuh",
+    "Microsoft Sentinel",
+    "Python",
+    "Networking",
+    "Incident Response",
+    "SIEM",
+    "Threat Detection",
+    "Portfolio",
+  ],
+
+  authors: [
+    {
+      name: "Rahul Singh",
+    },
+  ],
+
+  creator: "Rahul Singh",
+
+  openGraph: {
+    title: "Rahul Singh | Cybersecurity Analyst",
+    description:
+      "Cybersecurity portfolio featuring SOC projects, SIEM monitoring, Splunk, Wazuh, Microsoft Sentinel, Python, and certifications.",
+    url: "https://rahul-cyber.vercel.app",
+    siteName: "Rahul Singh Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Rahul Singh | Cybersecurity Analyst",
+    description:
+      "Cybersecurity portfolio showcasing SOC projects, SIEM tools, certifications, and security skills.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -28,7 +84,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-[#020617] text-white">
+        {children}
+      </body>
     </html>
   );
 }
