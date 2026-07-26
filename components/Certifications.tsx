@@ -27,7 +27,7 @@ const featuredCertifications = [
     issuer: "Cisco Networking Academy",
     date: "Jul 2025",
     image: "/images/certifications/cisco.png",
-    link: "https://www.netacad.com/certificates/?issuanceId=00a47937-cda8-4366-a4bb-7469dc75c0bdS",
+    link: "https://www.credly.com/badges/1bf79ff4-3c66-48c7-ba67-7afc072e39ae",
     skills: ["Networking", "Security", "CIA Triad"],
   },
   {
