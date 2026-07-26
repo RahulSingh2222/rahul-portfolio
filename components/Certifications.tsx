@@ -27,7 +27,7 @@ const featuredCertifications = [
     issuer: "Cisco Networking Academy",
     date: "Jul 2025",
     image: "/images/certifications/cisco.png",
-    link: "#",
+    link: "/images/certifications/cisco.png",
     skills: ["Networking", "Security", "CIA Triad"],
   },
   {
