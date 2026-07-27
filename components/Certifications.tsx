@@ -129,7 +129,7 @@ export default function Certifications() {
                   alt={cert.issuer}
                   width={60}
                   height={60}
-                  className="rounded-lg"
+                  className="rounded-lg object-contain w-[60px] h-[60px]"
                 />
 
                 <div>

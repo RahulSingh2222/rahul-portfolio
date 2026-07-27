@@ -153,6 +153,7 @@ export default function Hero() {
                             src="/images/profile.jpg"
                             alt="Rahul Singh"
                             fill
+                            sizes="(max-width: 768px) 200px, 400px"
                             className="object-cover"
                             priority
                         />

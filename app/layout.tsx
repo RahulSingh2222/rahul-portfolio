@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -28,49 +29,73 @@ export const metadata: Metadata = {
     "Cybersecurity",
     "Cybersecurity Analyst",
     "SOC Analyst",
+    "SOC",
     "Splunk",
     "Wazuh",
     "Microsoft Sentinel",
+    "SIEM",
     "Python",
     "Networking",
     "Incident Response",
-    "SIEM",
     "Threat Detection",
+    "Blue Team",
     "Portfolio",
   ],
 
   authors: [
     {
       name: "Rahul Singh",
+      url: "https://rahul-cyber.vercel.app",
     },
   ],
 
   creator: "Rahul Singh",
 
-  openGraph: {
-    title: "Rahul Singh | Cybersecurity Analyst",
-    description:
-      "Cybersecurity portfolio featuring SOC projects, SIEM monitoring, Splunk, Wazuh, Microsoft Sentinel, Python, and certifications.",
-    url: "https://rahul-cyber.vercel.app",
-    siteName: "Rahul Singh Portfolio",
-    locale: "en_US",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Rahul Singh | Cybersecurity Analyst",
-    description:
-      "Cybersecurity portfolio showcasing SOC projects, SIEM tools, certifications, and security skills.",
-  },
+  publisher: "Rahul Singh",
 
   robots: {
     index: true,
     follow: true,
   },
 
+  openGraph: {
+    title: "Rahul Singh | Cybersecurity Analyst",
+    description:
+      "Cybersecurity portfolio featuring SOC projects, SIEM monitoring, Splunk, Wazuh, Microsoft Sentinel, Python, Networking, and professional certifications.",
+
+    url: "https://rahul-cyber.vercel.app",
+
+    siteName: "Rahul Singh Portfolio",
+
+    locale: "en_US",
+
+    type: "website",
+
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Rahul Singh Cybersecurity Portfolio",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Rahul Singh | Cybersecurity Analyst",
+
+    description:
+      "Cybersecurity portfolio showcasing SOC projects, SIEM tools, certifications, networking, and security skills.",
+
+    images: ["/og-image.png"],
+  },
+
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
   },
 };
 
@@ -86,6 +111,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[#020617] text-white">
         {children}
+        <Analytics />
       </body>
     </html>
   );
