@@ -25,12 +25,7 @@ export default function AboutSection() {
               </h3>
 
               <p className="text-gray-300 leading-8">
-                I'm Rahul Singh, a Cybersecurity graduate passionate about
-                SOC Operations, Incident Response, Threat Detection,
-                Network Security, SIEM Monitoring, and Digital Forensics.
-                I enjoy solving cybersecurity challenges and continuously
-                improving my skills through hands-on labs, projects, and
-                platforms like TryHackMe.
+                I'm Rahul Singh, a Cybersecurity graduate passionate about SOC Operations, Incident Response, Threat Detection, Network Security, SIEM Monitoring, and Digital Forensics. I'm currently beginning my cybersecurity internship at CycloSec, where I'm looking forward to developing my practical knowledge and gaining industry exposure. I enjoy solving cybersecurity challenges and continuously improving my skills through hands-on labs, projects, and platforms like TryHackMe.
               </p>
 
             </div>
@@ -52,7 +47,9 @@ export default function AboutSection() {
 
                 <p><strong>Location:</strong> Uttarakhand, India</p>
 
-                <p><strong>Experience:</strong> SOC Technical Support Executive (L2)</p>
+                <p><strong>Current Role:</strong>  Cybersecurity Intern at CycloSec India Pvt. Ltd</p>
+
+                <p><strong>Previous Experience:</strong> SOC Technical Support Executive (L2)</p>
 
                 <p><strong>Current Goal:</strong> SOC Analyst / Cybersecurity Analyst</p>
 
